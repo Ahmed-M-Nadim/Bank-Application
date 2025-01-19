@@ -42,6 +42,7 @@ main {
 .input::placeholder {
   color: #ffbe58;
   text-align: center;
+  text-shadow: 0.3px 0.3px 0.3px #0f172fc3;
 }
 
 .loginLeft {
@@ -60,11 +61,21 @@ main {
 }
 
 .size-6 {
-  color: #ffbe58;
+  color: #edb257;
   transition: all 0.3s;
+  width: 30px;
+  /* text-shadow: 0.3px 0.3px 0.3px #0f172fc3; */
 }
 
 .size-6:hover {
   cursor: pointer;
-  transform: scale(1.5);
+  background-color: #edb257;
+  color: white;
+  border: none;
+  /* text-shadow: 0.3px 0.3px 0.3px #0f172fc3; */
+}
+
+.size-6:active {
+  /* text-shadow: 0.3px 0.3px 0.3px #0f172fc3; */
+  transform: scale(0.9);
 }
