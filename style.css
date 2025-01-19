@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #0f172f;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.input {
+  width: 80px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input::placeholder {
+  color: #ffbe58;
+  text-align: center;
+}
+
+.loginLeft {
+  color: #ffbe58;
+  font-size: 25px;
+}
+.loginRight {
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.size-6 {
+  color: #ffbe58;
+  height: ;
+}
