@@ -19,7 +19,9 @@ html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  background-color: #0f172f;
+  background-image: linear-gradient(#0f172feb, #322f33a1),
+    url(img/etienne-martin-2_K82gx9Uk8-unsplash1.jpg);
+  height: 100vh;
 }
 
 main {
@@ -34,6 +36,7 @@ main {
   height: 20px;
   border-radius: 10px;
   border: none;
+  padding: 2px 8px;
 }
 
 .input::placeholder {
@@ -44,10 +47,12 @@ main {
 .loginLeft {
   color: #ffbe58;
   font-size: 25px;
+  text-shadow: 2px 2px 2px #0f172fc3;
 }
 .loginRight {
   display: flex;
   gap: 10px;
+  padding: 5px;
 }
 
 .logo {
@@ -56,5 +61,10 @@ main {
 
 .size-6 {
   color: #ffbe58;
-  height: ;
+  transition: all 0.3s;
+}
+
+.size-6:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
