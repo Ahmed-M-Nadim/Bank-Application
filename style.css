@@ -18,9 +18,13 @@
 html {
   font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body {
-  background-image: linear-gradient(#0f172feb, #322f33a1),
+.bodyIndex {
+  background-image: linear-gradient(#0f172f, #322f33a1),
     url(img/etienne-martin-2_K82gx9Uk8-unsplash1.jpg);
+  height: 100vh;
+}
+.bodyUserPage {
+  background-image: linear-gradient(#0f172feb, #322f33a1);
   height: 100vh;
 }
 
@@ -59,8 +63,11 @@ body {
 .logo {
   width: 120px;
 }
+.logoUserPage {
+  width: 120px;
+}
 
-.size-6 {
+.buttonLogin {
   color: #edb257;
   transition: all 0.3s;
   width: 30px;
@@ -68,7 +75,7 @@ body {
   /* text-shadow: 0.3px 0.3px 0.3px #0f172fc3; */
 }
 
-.size-6:hover {
+.buttonLogin:hover {
   cursor: pointer;
   background-color: #edb257;
   color: white;
@@ -76,8 +83,38 @@ body {
   /* text-shadow: 0.3px 0.3px 0.3px #0f172fc3; */
 }
 
-.size-6:active {
+.buttonLogin:active {
   /* text-shadow: 0.3px 0.3px 0.3px #0f172fc3; */
+  transform: scale(0.9);
+}
+
+a {
+  text-decoration: none;
+  padding: 2px 8px;
+}
+
+a:visited,
+a:active {
+  padding: 2px 8px;
+  text-decoration: none;
+}
+.buttonLogout {
+  color: #edb257;
+  transition: all 0.3s;
+  width: 236px;
+  height: 24px;
+  border-radius: 10px;
+  border: none;
+  padding: 2px 8px;
+}
+
+.buttonLogout:hover {
+  cursor: pointer;
+  background-color: #edb257;
+  color: white;
+}
+
+.buttonLogout:active {
   transform: scale(0.9);
 }
 

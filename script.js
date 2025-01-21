@@ -1,4 +1,7 @@
-const loginUser = document.querySelector('.size-6');
-loginUser.addEventListener('click', function () {
-  console.log('Hi Ahmed');
+//All variables (document.querySelector)
+const loginUser = document.querySelector('.buttonLogin');
+
+// All Event Method
+loginUser.addEventListener('click', (e) => {
+  location.href = 'userPage.html';
 });
