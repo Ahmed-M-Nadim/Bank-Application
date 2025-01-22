@@ -32,7 +32,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .input {
@@ -53,6 +53,7 @@ html {
   color: #ffbe58;
   font-size: 25px;
   text-shadow: 2px 2px 2px #0f172fc3;
+  width: 25%;
 }
 .loginRight {
   display: flex;
@@ -61,14 +62,14 @@ html {
 }
 
 .logo {
-  width: 120px;
+  width: 100px;
 }
 .logoUserPage {
-  width: 120px;
+  width: 100px;
 }
 
 .buttonLogin {
-  color: #edb257;
+  color: #0f172f;
   transition: all 0.3s;
   width: 30px;
   height: 24px;
@@ -99,7 +100,7 @@ a:active {
   text-decoration: none;
 }
 .buttonLogout {
-  color: #edb257;
+  color: #0f172f;
   transition: all 0.3s;
   width: 236px;
   height: 24px;
@@ -120,4 +121,120 @@ a:active {
 
 .container {
   width: 70%;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #0f172f;
+  text-shadow: 0.5px 0.5px 0.5px #0f172fc3;
+}
+
+.headerLeft p {
+  color: #846c44;
+}
+
+.currencySign {
+  color: #846c44;
+}
+
+.headerRight {
+  color: #0f172f;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px #0f172fc3;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.miniBody {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 20px;
+  margin-top: 20px;
+}
+
+article {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  background-color: aliceblue;
+  border-radius: 15px;
+  /* padding: 15px; */
+  color: #1c1c2c;
+  box-shadow: 0.3px 0.3px 3px #1c1c2c;
+}
+
+aside {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Transfer {
+  background-color: #1c1c2c;
+  height: 75px;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ffbe58;
+  box-shadow: 1px 1px 5px #1c1c2c;
+}
+
+.Transfer-Input {
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.Request {
+  background-color: #423c35;
+  height: 75px;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ffbe58;
+  box-shadow: 1px 1px 5px #1c1c2c;
+}
+
+.Request-Input {
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.Close {
+  background-color: #322f33;
+  height: 75px;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ffbe58;
+  box-shadow: 1px 1px 5px #1c1c2c;
+}
+
+.Close-Input {
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+ul {
+  list-style: none;
+}
+
+.dipositWithdraw {
+  padding: 13px;
+  border-bottom: 1px solid #322f33;
+}
+
+.dipositWithdraw:last-child {
+  border: none;
 }
