@@ -55,6 +55,12 @@ html {
   text-shadow: 2px 2px 2px #0f172fc3;
   width: 22%;
 }
+.loginLeftUserPage {
+  color: #846c44;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px #0f172fc3;
+  width: 22%;
+}
 .loginRight {
   display: flex;
   gap: 10px;
@@ -62,10 +68,10 @@ html {
 }
 
 .logo {
-  width: 100px;
+  width: 180px;
 }
 .logoUserPage {
-  width: 100px;
+  width: 80px;
 }
 
 .buttonLogin {
@@ -171,6 +177,7 @@ aside {
   grid-row: 1/4;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -178,7 +185,7 @@ aside {
   background-color: #1c1c2c;
   height: 75px;
   border-radius: 8px;
-  padding: 15px 30px;
+  padding: 14px 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -198,7 +205,7 @@ aside {
   background-color: #423c35;
   height: 75px;
   border-radius: 8px;
-  padding: 15px 30px;
+  padding: 14px 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -217,7 +224,7 @@ aside {
   background-color: #322f33;
   height: 75px;
   border-radius: 8px;
-  padding: 15px 30px;
+  padding: 14px 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -242,11 +249,13 @@ ul {
   border-bottom: 1px solid #322f33;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .leftDepDate {
   display: flex;
   gap: 28px;
+  align-items: center;
 }
 
 .dipositWithdraw:last-child {
@@ -258,7 +267,53 @@ ul {
   color: #ffbe58;
   border-radius: 10px;
   padding: 2px 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .leftDate {
+  font-size: 12px;
+}
+
+footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightFooter {
+  font-size: 12px;
+}
+
+.leftFooter {
+  display: flex;
+  font-size: 12px;
+  gap: 30px;
+}
+
+.rightFooterTime {
+  font-weight: 900;
+}
+
+.in,
+.out,
+.interest {
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+
+  font-size: 8px;
+  gap: 5px;
+}
+
+.inAmount,
+.outAmount,
+.interestAmount {
+  font-size: 18px;
+}
+
+.sort {
+  font-size: 14px;
 }
