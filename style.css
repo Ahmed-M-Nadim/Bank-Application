@@ -75,7 +75,9 @@ html {
 }
 
 .buttonLogin,
-.buttonClose {
+.buttonClose,
+.buttonTransfer,
+.buttonRequest {
   color: #0f172f;
   transition: all 0.3s;
   width: 30px;
@@ -84,7 +86,9 @@ html {
 }
 
 .buttonLogin:hover,
-.buttonClose:hover {
+.buttonClose:hover,
+.buttonTransfer:hover,
+.buttonRequest:hover {
   cursor: pointer;
   background-color: #edb257;
   color: white;
@@ -93,7 +97,9 @@ html {
 }
 
 .buttonLogin:active,
-.buttonClose:active {
+.buttonClose:active,
+.buttonTransfer:active,
+.buttonRequest:active {
   /* text-shadow: 0.3px 0.3px 0.3px #0f172fc3; */
   transform: scale(0.9);
 }
@@ -108,7 +114,7 @@ a:active {
   padding: 2px 8px;
   text-decoration: none;
 }
-.buttonLogout {
+/* .buttonLogout {
   color: #0f172f;
   transition: all 0.3s;
   width: 236px;
@@ -126,7 +132,7 @@ a:active {
 
 .buttonLogout:active {
   transform: scale(0.9);
-}
+} */
 
 .container {
   width: 60%;

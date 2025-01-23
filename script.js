@@ -1,4 +1,5 @@
 //All variables (document.querySelector)
+//****************************************
 const loginUser = document.querySelector('.buttonLogin');
 const logoutUser = document.querySelector('.buttonClose');
 const transferUser = document.querySelector('.buttonTransfer');
@@ -12,8 +13,9 @@ const body = document.querySelector('body');
 const mainPage = document.querySelector('.container');
 const logo = document.querySelector('.logo');
 const mainBalance = document.querySelector('.mainBalance');
-//==================================
+//=============================================================
 //The Main Object
+//*****************
 const main = [
   {
     name: 'Ahmed',
@@ -34,7 +36,9 @@ const main = [
     action: [125, 528, -41, -86, 487, -63, -847],
   },
 ];
+//==============================================================
 // All Event Method
+//*******************
 loginUser.addEventListener('click', (e) => {
   for (i = 0; i < main.length; i++) {
     if (
@@ -47,6 +51,8 @@ loginUser.addEventListener('click', (e) => {
       body.classList.remove('bodyIndex');
       logo.style.width = '80px';
       mainBalance.textContent = main[i].balance;
+      userName.value = '';
+      userPassword.value = '';
     }
   }
 });
@@ -59,6 +65,11 @@ logoutUser.addEventListener('click', function () {
     ) {
       hiUser.textContent = 'Log in to get started';
       mainPage.hidden = true;
+      body.classList.remove('bodyUserPage');
+      body.classList.add('bodyIndex');
+      logo.style.width = '180px';
+      userNameOut.value = '';
+      userPasswordOut.value = '';
     }
   }
 });
