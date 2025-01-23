@@ -18,14 +18,137 @@
       <img src="img/final-Logo2.png" alt="" class="logo" />
       <section class="loginRight">
         <form action="">
-          <input type="text" placeholder="User" class="input" />
-          <input type="password" placeholder="PIN" class="input" />
+          <input type="text" placeholder="User" class="input userName" />
+          <input type="password" placeholder="PIN" class="input userPassword" />
         </form>
         <button class="buttonLogin">→</button>
       </section>
     </section>
-    <main class="container">
-      <header></header>
+    <main class="container" hidden>
+      <header>
+        <div class="headerLeft">
+          <h2>Current Balance</h2>
+          <p>As of <span>Date</span></p>
+        </div>
+        <div class="headerRight">
+          <span class="currencySign">$</span>
+          <span class="mainBalance">0 </span>
+        </div>
+      </header>
+      <div class="miniBody">
+        <article>
+          <ul>
+            <li class="dipositWithdraw">
+              <div class="leftDepDate">
+                <div class="depWithColor">deposit</div>
+                <p class="leftDate">14/7/1940</p>
+              </div>
+              100000₤
+            </li>
+            <li class="dipositWithdraw">
+              <div class="leftDepDate">
+                <div class="depWithColor">deposit</div>
+                <p class="leftDate">14/7/1940</p>
+              </div>
+              100000₤
+            </li>
+            <li class="dipositWithdraw">
+              <div class="leftDepDate">
+                <div class="depWithColor">deposit</div>
+                <p class="leftDate">14/7/1940</p>
+              </div>
+              100000₤
+            </li>
+            <li class="dipositWithdraw">
+              <div class="leftDepDate">
+                <div class="depWithColor">deposit</div>
+                <p class="leftDate">14/7/1940</p>
+              </div>
+              100000₤
+            </li>
+            <li class="dipositWithdraw">
+              <div class="leftDepDate">
+                <div class="depWithColor">deposit</div>
+                <p class="leftDate">14/7/1940</p>
+              </div>
+              100000₤
+            </li>
+            <li class="dipositWithdraw">
+              <div class="leftDepDate">
+                <div class="depWithColor">deposit</div>
+                <p class="leftDate">14/7/1940</p>
+              </div>
+              100000₤
+            </li>
+            <li class="dipositWithdraw">
+              <div class="leftDepDate">
+                <div class="depWithColor">deposit</div>
+                <p class="leftDate">14/7/1940</p>
+              </div>
+              100000₤
+            </li>
+          </ul>
+        </article>
+        <!-- //==================================== -->
+        <aside>
+          <div class="Transfer">
+            <p>Transfer money</p>
+            <div class="Transfer-Input">
+              <form action="">
+                <input type="text" placeholder="Transfer to" class="input" />
+                <input type="text" placeholder="Amount" class="input" />
+                <button type="submit" class="buttonTransfer">→</button>
+              </form>
+            </div>
+          </div>
+          <!-- //===================================== -->
+          <div class="Request">
+            <p>Request Loan</p>
+            <div class="Request-Input">
+              <form action="">
+                <input type="text" placeholder="Amount" class="input" />
+                <button type="submit" class="buttonRequest">→</button>
+              </form>
+            </div>
+          </div>
+          <!-- //===================================== -->
+          <div class="Close">
+            <p>Close Account</p>
+            <div class="Close-Input">
+              <form action="">
+                <input
+                  type="text"
+                  placeholder="User"
+                  class="input userNameOut"
+                />
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="input userPasswordOut"
+                />
+                <button type="submit" class="buttonClose">→</button>
+              </form>
+            </div>
+          </div>
+          <!-- //===================================== -->
+        </aside>
+      </div>
+      <footer>
+        <div class="leftFooter">
+          <div class="in">IN <span class="inAmount">27035,20₤</span></div>
+          <div class="out">OUT <span class="outAmount">1082,61₤</span></div>
+          <div class="interest">
+            INTEREST <span class="interestAmount">323,45₤</span>
+          </div>
+          <div class="sort"><span class="sortArrow">↓ </span> SORT</div>
+        </div>
+        <div class="rightFooter">
+          <p>
+            You will be Logged out in
+            <span class="rightFooterTime">09:15 PM</span>
+          </p>
+        </div>
+      </footer>
     </main>
     <script src="script.js"></script>
   </body>
