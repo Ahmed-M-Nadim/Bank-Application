@@ -14,6 +14,10 @@ const mainPage = document.querySelector('.container');
 const logo = document.querySelector('.logo');
 const mainBalance = document.querySelector('.mainBalance');
 const balanceDate = document.querySelector('.balanceDate');
+const name = document.querySelector('.name');
+const inAmount = document.querySelector('.inAmount');
+const outAmount = document.querySelector('.outAmount');
+const interestAmount = document.querySelector('.interestAmount');
 const depWithColor0 = document.querySelector('.depWithColor0');
 const depWithColor1 = document.querySelector('.depWithColor1');
 const depWithColor2 = document.querySelector('.depWithColor2');
@@ -51,18 +55,21 @@ const main = [
     password: 1111,
     balance: 58000,
     action: [-14000, -586, 145, 695, -4587, 6953, 542],
+    rate: 0.12,
   },
   {
     name: 'Hanem',
     password: 2222,
     balance: 34000,
     action: [13500, 528, -416, -896, 4587, -6953, 568],
+    rate: 0.15,
   },
   {
     name: 'Nour',
     password: 3333,
     balance: 18000,
     action: [125, 528, -41, -86, 487, -63, -847],
+    rate: 0.09,
   },
 ];
 //==============================================================
@@ -99,7 +106,7 @@ loginUser.addEventListener('click', (e) => {
       body.classList.add('bodyUserPage');
       body.classList.remove('bodyIndex');
       logo.style.width = '80px';
-      mainBalance.textContent = main[i].balance;
+      name.style.width = '150px';
       userName.value = '';
       userPassword.value = '';
       for (j = 0; j < main[i].action.length; j++) {
@@ -118,8 +125,23 @@ loginUser.addEventListener('click', (e) => {
       newArr2[z].textContent = 'Withdraw';
       newArr2[z].style.background = '#edb257';
     }
-    console.log(Number(newArr[z].textContent));
+    // console.log(Number(newArr[z].textContent));
   }
+  let actionSum = 0;
+  let inSum = 0;
+  let outSum = 0;
+
+  for (y = 0; y < newArr.length; y++) {
+    actionSum += Number(newArr[y].textContent);
+    if (Number(newArr[y].textContent) > 0) {
+      inSum += Number(newArr[y].textContent);
+    } else if (Number(newArr[y].textContent) < 0) {
+      outSum += Number(newArr[y].textContent);
+    }
+  }
+  mainBalance.textContent = actionSum;
+  inAmount.textContent = inSum;
+  outAmount.textContent = outSum;
 });
 
 logoutUser.addEventListener('click', function () {
