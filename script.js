@@ -2,7 +2,9 @@
 //****************************************
 const loginUser = document.querySelector('.buttonLogin');
 const logoutUser = document.querySelector('.buttonClose');
-const transferUser = document.querySelector('.buttonTransfer');
+const transferButton = document.querySelector('.buttonTransfer');
+const transferTo = document.querySelector('.transferTo');
+const transferAmount = document.querySelector('.transferAmount');
 const requestUser = document.querySelector('.buttonRequest');
 const hiUser = document.querySelector('.loginLeft');
 const userName = document.querySelector('.userName');
@@ -54,7 +56,7 @@ const main = [
     name: 'Ahmed',
     password: 1111,
     balance: 58000,
-    action: [-14000, -586, 145, 695, -4587, 6953, 542],
+    action: [14000, -586, 145, 695, -4587, 6953, 542],
     rate: 0.12,
   },
   {
@@ -95,6 +97,8 @@ loginUser.addEventListener('click', (e) => {
     depWithColor6,
   ];
 
+  // ============User Page====================
+
   for (i = 0; i < main.length; i++) {
     if (
       userName.value == main[i].name &&
@@ -109,6 +113,8 @@ loginUser.addEventListener('click', (e) => {
       name.style.width = '150px';
       userName.value = '';
       userPassword.value = '';
+
+      // ========Deposit & Withdraw & Color Tab=========
       for (j = 0; j < main[i].action.length; j++) {
         const userAction = main[i].action;
 
@@ -131,6 +137,8 @@ loginUser.addEventListener('click', (e) => {
   let inSum = 0;
   let outSum = 0;
 
+  //===========Total In & Out & Main Balance=======
+
   for (y = 0; y < newArr.length; y++) {
     actionSum += Number(newArr[y].textContent);
     if (Number(newArr[y].textContent) > 0) {
@@ -142,6 +150,19 @@ loginUser.addEventListener('click', (e) => {
   mainBalance.textContent = actionSum;
   inAmount.textContent = inSum;
   outAmount.textContent = outSum;
+
+  //================RATE==================
+});
+//==============Transfer==================
+transferButton.addEventListener('click', function () {
+  for (g = 0; g < main.length; g++) {
+    if (transferTo.value == main[g].name) {
+      main[g].action.unshift(Number(transferAmount.value));
+      mainBalance.textContent -= Number(transferAmount.value);
+    }
+  }
+  transferTo.value = '';
+  transferAmount.value = '';
 });
 
 logoutUser.addEventListener('click', function () {
@@ -157,6 +178,7 @@ logoutUser.addEventListener('click', function () {
       logo.style.width = '180px';
       userNameOut.value = '';
       userPasswordOut.value = '';
+      name.style.width = '500px';
     }
   }
 });
