@@ -182,3 +182,5 @@ logoutUser.addEventListener('click', function () {
     }
   }
 });
+
+LargestContentfulPaint.addEventListener('click', () => {});
