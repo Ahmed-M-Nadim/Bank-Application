@@ -59,7 +59,7 @@ html {
 
 .loginLeft {
   color: #ffbe58;
-  font-size: 25px;
+  font-size: 1.6rem;
   text-shadow: 2px 2px 2px #0f172fc3;
   width: 22%;
 }
@@ -346,4 +346,9 @@ footer {
   align-items: flex-end;
   align-self: center;
   justify-self: end;
+}
+
+h4 {
+  background-color: cyan;
+  color: coral;
 }
